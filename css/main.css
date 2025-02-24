@@ -474,3 +474,11 @@ main .about2-row {display: flex; margin-top: 0px;}
   .works article>div:nth-child(1) {width: 90%;}
 
 }
+@media screen and (max-width:600px){
+  header h1 {white-space: nowrap; font-size: 4rem;}
+  header .h-name {font-size: 3rem; top: 320px; text-align: center;}
+  header .h-port {text-align: center; font-size: 20px;}
+
+
+}
+
