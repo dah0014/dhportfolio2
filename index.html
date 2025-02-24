@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="./js/main.js"></script>
   <style>
     @font-face {
@@ -37,7 +38,7 @@
     <li><a href="#home">HOME</a></li>
     <li class="about-hover"><a href="#about" >ABOUT ME</a>
       <ul>
-        <li><a href="#">이력서</a></li>
+        <li><a href="./resume.pdf" target="_blank">이력서</a></li>
         <li><a href="./artist.html">ARTIST</a></li>
         <li><a href="./teacher.html">TEACHER</a></li>
       </ul>
@@ -45,7 +46,7 @@
     <li><a href="#skills">SKILLS</a></li>
     <li><a href="#works">WORKS</a></li>
     <li><a href="#design">DESIGN</a></li>
-    <li><a href="#">CONTACT</a></li>
+    <li class="contact1"><a href="./contact.html">CONTACT</a></li>
   </ul>
 </nav>
   
@@ -149,7 +150,7 @@
               </tr>
               <tr>
                 <td>2023</td>
-                <td>단체전  ⌜We're super shy Oh say it ditto part1⌟ </td>
+                <td>단체전  ⌜We're super shy Oh say it ditto part2⌟ </td>
                 <td>목꼬지</td>
               </tr>
               <tr>
@@ -159,7 +160,7 @@
               </tr>
               <tr>
                 <td>2023</td>
-                <td>단체전  ⌜We're super shy Oh say it ditto part2⌟</td>
+                <td>단체전  ⌜We're super shy Oh say it ditto part1⌟</td>
                 <td>목꼬지</td>
               </tr>
               <tr>
@@ -208,9 +209,9 @@
       </div>
     </div>
     <div class="buttons">
-      <button><a href="#" class="resume">이 력 서</a></button>
-      <button><a href="./artist.html" target="_blank">ARTIST</a></button>
-      <button><a href="./teacher.html" target="_blank">TEACHER</a></button>
+      <button><a href="./resume.pdf" class="resume" target="_blank">이 력 서</a></button>
+      <button><a href="./artist.html">ARTIST</a></button>
+      <button><a href="./teacher.html">TEACHER</a></button>
       <p class="btn_click"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;CLICK </p>
     </div>
   </div>
@@ -232,34 +233,68 @@
   <h2 id="works" class="menu">WORKS</h2>
     <div class="works">
       <article>
-        <div><img src="./img/hPart.png" alt="H-PART"></div>
+        <div><img src="./img/plantsPhoto.png" alt="plants photo"></div>
         <div>
-          <h3>H_PART</h3>
+          <h3>Plants Photo</h3>
           <h4>웹페이지 창작</h4>
-          <p class="w-des"><br>• 목표 : 새롭게 창작한 H_PART라는 기업에 걸맞는 웹디자인으로 사이트를 구현한다.</p>
+          <p class="w-des">
+          <br>식물 사진을 공유하면서<br> 사용자들 간에 대화를 나누고 힐링할 수 있는 공간인<br> Plants Photo 웹 사이트를 목적에 맞게 구현한다.<br>[LIST, 콘텐츠, 소개, 문의 페이지 연결]
+          </p>             
           <br>
           <p>• 참여도 : 개인 제작 100%</p>
           <p>• 작업언어 : HTML, CSS, Javascript</p>
           <p>• 작업툴 : VS code</p>
           <div class="w-button">
-            <button><a href="#" target="_blank">Website</a></button>
-            <button><a href="#" target="_blank">Plan</a></button>
+            <button><a href="https://dah0014.github.io/plants-photo/" target="_blank">Website</a></button>
+            <!-- <button><a href="#" target="_blank">Plan</a></button> -->
           </div>
         </div>
       </article>
       <article>
-        <div><img src="./img/ArtAcademy.png" alt="Dahong Art Academy"></div>
+        <div><img src="./img/cakyCafe.png" alt="CAKY CAFE"></div>
         <div>
-          <h3>Dahong Art Academy</h3>
-          <h4>웹페이지 창작</h4>
-          <p class="w-des"><br>• 목표 : 웹사이트를 통해 미술학원의 수업과 운영과정을 자세히 소개하고 고객의 신뢰도와 만족도를 높인다. 로그인, 회원가입 페이지 추가.</p>
+          <h3>CAKY CAFE</h3>
+          <h4>반응형 웹사이트</h4>
+          <p class="w-des"><br>케이크를 전문으로 판매하는<br> caky cafe의 추천 메뉴와 매장 분위기를<br> 사진으로 소개하는 웹사이트를 만든다.</p>
           <br>
           <p>• 참여도 : 개인 제작 100%</p>
           <p>• 작업언어 : HTML, CSS, Javascript</p>
           <p>• 작업툴 : VS code</p>
           <div class="w-button">
-            <button class="btn_click"><a href="#" target="_blank">Website</a></button>
-            <button class="btn_click"><a href="#" target="_blank">Plan</a></button>
+            <button><a href="https://dah0014.github.io/cakycafe/" target="_blank">Website</a></button>
+            <!-- <button><a href="#" target="_blank">Plan</a></button> -->
+          </div>
+        </div>
+      </article>
+      <article>
+        <div><img src="./img/hPart.png" alt="H-PART"></div>
+        <div>
+          <h3>H_PART</h3>
+          <h4>웹페이지 창작</h4>
+          <p class="w-des"><br>새롭게 창작한 H_PART라는 기업에 걸맞는<br> 웹디자인으로 사이트를 구현한다.</p>
+          <br>
+          <p>• 참여도 : 개인 제작 100%</p>
+          <p>• 작업언어 : HTML, CSS, Javascript</p>
+          <p>• 작업툴 : VS code</p>
+          <div class="w-button">
+            <button><a href="https://dah0014.github.io/h-part/" target="_blank">Website</a></button>
+            <!-- <button><a href="#" target="_blank">Plan</a></button> -->
+          </div>
+        </div>
+      </article>
+      <article>
+        <div><img src="./img/ArtAcademy.jpg" alt="Dahong Art Academy"></div>
+        <div>
+          <h3>Dahong Art Academy</h3>
+          <h4>웹페이지 창작</h4>
+          <p class="w-des"><br>웹사이트를 통해<br> 미술학원의 수업과 운영과정을 자세히 소개하고<br> 고객의 신뢰도와 만족도를 높인다. <br>[프로필, 로그인, 회원가입 페이지 연결]</p>
+          <br>
+          <p>• 참여도 : 개인 제작 100%</p>
+          <p>• 작업언어 : HTML, CSS, Javascript</p>
+          <p>• 작업툴 : VS code</p>
+          <div class="w-button">
+            <button class="btn_click"><a href="https://dah0014.github.io/dahong-academy/" target="_blank">Website</a></button>
+            <!-- <button class="btn_click"><a href="#" target="_blank">Plan</a></button> -->
           </div>
         </div>
       </article>
@@ -269,14 +304,14 @@
           <h3>Apple Store</h3>
           <h4>팀 프로젝트 - 웹사이트 리뉴얼</h4>
           <br>
-          <p class="w-des">• 목표 : 현 애플 스토어의 문제점을 파악하고 팀원간 협력을 통해,<br> 편리하고 브랜드 가치를 높일 수 있는 사이트를 구축한다.</p>
+          <p class="w-des">현 애플 스토어의 문제점을 파악하고 팀원간 협력을 통해,<br> 편리하고 브랜드 가치를 높일 수 있는 사이트를 구축한다.</p>
           <br>
           <p>• 역할 : 조장, 슬라이드 부분, 발표</p>
           <p>• 작업언어 : HTML, CSS, Javascript</p>
           <p>• 작업툴 : VS code</p>
           <div class="w-button">
-            <button class="btn_click"><a href="#" target="_blank">Website</a></button>
-            <button class="btn_click"><a href="#" target="_blank">Plan</a></button>
+            <button class="btn_click"><a href="https://dah0014.github.io/apple-store/" target="_blank">Website</a></button>
+            <!-- <button class="btn_click"><a href="#" target="_blank">Plan</a></button> -->
           </div>
         </div>
       </article>
@@ -285,14 +320,14 @@
         <div>
           <h3>IGONG GALLERY</h3>
           <h4>반응형 웹사이트</h4>
-          <p class="w-des"><br>• 목표 : 웹사이트 없이 인스타그램으로 전시 정보를 알리고 있는 이공갤러리의 웹사이트를 만들고, 관람객에게 보다 자세한 정보를 제공하고 편리한 사이트를 만들어 갤러리 방문율을 높인다.</p>
+          <p class="w-des"><br>웹사이트 없이 인스타그램으로 전시 정보를 알리고 있는<br> 이공갤러리의 웹사이트를 만들고,<br> 관람객에게 보다 자세한 정보를 제공하고<br> 편리한 사이트를 만들어 갤러리 방문율을 높인다.</p>
           <br>
           <p>• 참여도 : 개인 제작 100%</p>
           <p>• 작업언어 : HTML, CSS, Javascript</p>
           <p>• 작업툴 : VS code</p>
           <div class="w-button">
-            <button><a href="#" target="_blank">Website</a></button>
-            <button><a href="#" target="_blank">Plan</a></button>
+            <button><a href="https://dah0014.github.io/igongGallery/" target="_blank">Website</a></button>
+            <!-- <button><a href="https://dah0014.github.io/igongGallery/igongProposal.pdf" target="_blank">Plan</a></button> -->
           </div>
         </div>
       </article>
@@ -301,46 +336,14 @@
         <div>
           <h3>SIDMOOL</h3>
           <h4>웹사이트 리뉴얼</h4>
-          <p class="w-des"><br>• 목표 : 좋은 성분과 품질의 화장품을 판매하겠다는 기업이념을 강조하는 웹디자인을 구현하고, 현 사이트의 문제점을 찾고 수정하여 매출을 높인다.</p>
+          <p class="w-des"><br>좋은 성분과 품질의 화장품을 판매하겠다는<br> 기업이념을 강조하는 웹디자인을 구현하고,<br> 현 사이트의 문제점을 찾고 수정하여 매출을 높인다.</p>
           <br>
           <p>• 참여도 : 개인 제작 100%</p>
           <p>• 작업언어 : HTML, CSS, Javascript</p>
           <p>• 작업툴 : VS code</p>
           <div class="w-button">
-            <button><a href="#" target="_blank">Website</a></button>
-            <button><a href="#" target="_blank">Plan</a></button>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div><img src="./img/cakyCafe.png" alt="CAKY CAFE"></div>
-        <div>
-          <h3>CAKY CAFE</h3>
-          <h4>반응형 페이지</h4>
-          <p class="w-des"><br>• 목표 : 케이크를 전문으로 판매하는 caky cafe의 추천 메뉴와 매장 분위기를 사진으로 소개하는 웹사이트를 만든다.</p>
-          <br>
-          <p>• 참여도 : 개인 제작 100%</p>
-          <p>• 작업언어 : HTML, CSS, Javascript</p>
-          <p>• 작업툴 : VS code</p>
-          <div class="w-button">
-            <button><a href="#" target="_blank">Website</a></button>
-            <button><a href="#" target="_blank">Plan</a></button>
-          </div>
-        </div>
-      </article>
-      <article>
-        <div><img src="./img/plantsPhoto.png" alt="plants photo"></div>
-        <div>
-          <h3>Plants Photo</h3>
-          <h4>웹페이지 창작</h4>
-          <p class="w-des"><br>• 목표 : 식물 사진을 공유하면서 사용자들 간에 대화를 나누고 힐링할 수 있는 공간인 Plants Photo 웹 사이트를 목적에 맞게 구현</p>
-          <br>
-          <p>• 참여도 : 개인 제작 100%</p>
-          <p>• 작업언어 : HTML, CSS, Javascript</p>
-          <p>• 작업툴 : VS code</p>
-          <div class="w-button">
-            <button><a href="#" target="_blank">Website</a></button>
-            <button><a href="#" target="_blank">Plan</a></button>
+            <button><a href="https://dah0014.github.io/sidmool/" target="_blank">Website</a></button>
+            <!-- <button><a href="#" target="_blank">Plan</a></button> -->
           </div>
         </div>
       </article>
@@ -351,29 +354,111 @@
     
 <!-- -----main(design)------ -->
   <h2 id="design">DESIGN</h2>
-    <table class="design_wrap">
-      <tbody>
-        <tr class="de1">
-          <td>
-            <div class="design_box d1"><h4>01</h4><img src="./img/design1.png" alt="banner1"><p></p></div>
-          </td>
-          <td>
-            <div class="design_box d2"><h4>02</h4><img src="./img/design3.png" alt="banner2"><p></p></div>
-          </td>
-        </tr>
-        <tr class="de2">
-          <td>
-            <div class="design_box d3"><h4>03</h4><img src="./img/design5.png" alt=""><p></p></div>
-          </td>
-          <td>
-            <div class="design_box d4"><h4>04</><img src="" alt=""><p></p></div>
-          </td>
-          <td>
-            <div class="design_box d5"><h4>05</><img src="" alt=""><p></p></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <p class="btn_click_de"><i class="fa-solid fa-arrow-down"></i></i>&nbsp;&nbsp;CLICK </p>
+    <div class="d_container">
+      <article class="d_modal_btn">
+        <h4>01</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design1.png)"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>02</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design7.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>03</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design11.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>04</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design6.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>05</h4>
+        <div class="white-back" ><div class="backde" style="background-image: url(./img/design9.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>06</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design10.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>07</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design3.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>08</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design8.png);"></div></div>
+      </article>
+      <article class="d_modal_btn">
+        <h4>09</h4>
+        <div class="white-back"><div class="backde" style="background-image: url(./img/design5.png);"></div></div>
+      </article>
+
+      <!-- 팝업 -->
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>샤인 머스캣 할인 배너</h3>
+          <img src="./img/design1.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>new cake</h3>
+          <img src="./img/design7.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>baguette</h3>
+          <img src="./img/design11.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>알로에 수딩젤</h3>
+          <img src="./img/design6.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>반 고흐 특별전시회</h3>
+          <img src="./img/design9.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>lemon tea</h3>
+          <img src="./img/design10.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>독후감 공모전</h3>
+          <img src="./img/design3.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>초코 마카롱</h3>
+          <img src="./img/design8.png" alt="배너 이미지">
+        </div>
+      </div>
+      <div class="d_modal">
+        <div class="d_modal_popup">
+          <button type="button" class="close_btn">X</button>
+          <h3>겨울 아우터 세일</h3>
+          <img src="./img/design5.png" alt="배너 이미지">
+        </div>
+      </div>
+    </div>
+    
   
 </main>
 <!-- -------footer-------- -->
