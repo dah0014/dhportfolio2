@@ -10,9 +10,33 @@ if(window.scrollY = 0){
   Top.style.display ='none';
 } else {
   Top.style.display = 'block';
-  /* openBtn */
 }
 
+/* 햄버거 메뉴 */
+const nav_menu = document.querySelector('.menuBox-sub');
+const menuIcon = document.querySelector('.menuBox .threeIcon');
+const xIcon = document.querySelector('.menuBox .xIcon');
+const windowInnerWidth = window.innerWidth;
+
+// if(windowInnerWidth > 700){
+//   menuIcon.style.display = 'none';
+// } else {
+//   menuIcon.style.display = 'block';
+// }
+
+menuIcon.addEventListener('click',()=>{
+  nav_menu.style.display = 'block';
+  menuIcon.style.display = 'none';
+  xIcon.style.display = 'block';
+});
+xIcon.addEventListener('click',()=>{
+  xIcon.style.display = 'none';
+  nav_menu.style.display = 'none';
+  menuIcon.style.display = 'block';
+});
+
+
+/* openBtn */
 let myWindow
     
 function openBtn1() {
