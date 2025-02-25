@@ -22,7 +22,7 @@ header {
 
 /* nav */
 header #menu ul {
-  position: fixed; top: 0; z-index: 9999; padding-top: 10px; right: 50px;
+  position: fixed; top: 0; z-index: 9999; padding-top: 10px; right: 30px;
   display: flex; justify-content: right;
   color: #fff; 
   
@@ -30,12 +30,12 @@ header #menu ul {
 header #menu ul li {padding-left: 50px;}
 header #menu ul li:hover {color:#27e9b6;}
 /* title */
-header #title {display: flex; justify-content: center; flex-direction: column;}
+header #title {display: flex;}
 header h1 {color: #fff; font-size: 70px;}
 header p {
   color:#27e9b6; font-size: 60px; font-weight: 200; font-style: italic;
-  letter-spacing: 10px; padding-top: 20px; padding-left: 40px;
-  font-family: "Lato", serif; margin-top: -40px;
+  letter-spacing: 10px; margin-top: 20px; margin-left: 20px;
+  font-family: "Lato", serif;
 }
 
 /* ----------main-------------- */
@@ -49,6 +49,8 @@ main h2 {
 }
 
 /* works */
+
+/* swiper1 */
 .main1 .swiper {
   width: 100%;
   height: 780px;
@@ -95,6 +97,7 @@ main h2 {
   color: #000;
 }
 
+/* swiper2 */
 .main2 .swiper {
   width: 100%;
   height: 900px;
@@ -116,7 +119,7 @@ main h2 {
 }
 .main2 .s2 {
   background-image: url('../img/exhibition5.jpg');
-  background-position: center top 50%;
+  background-position: center top 40%;
   background-size: cover;
 }
 .main2 .s3 {
@@ -128,7 +131,6 @@ main h2 {
   background-image: url('../img/award3.jpg');
   background-position: center top 10%;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 .main2 .s5 {
   background-image: url('../img/award1.jpg');
@@ -177,9 +179,9 @@ main h2 {
   font-weight: 200;
 }
 .swiper-slide:hover .overlay {
-  opacity: 1;
+  opacity: 1; height: 100%; 
 }
-.main2 .swiper-slide .overlay p:nth-child(1) {font-size: 30px; }
+.main2 .swiper-slide .overlay p:nth-child(1) {font-size: 25px; font-weight: 400;}
 .main2 .swiper-slide .overlay p:nth-child(2) {font-size: 20px;}
 
 /* arrow, page */
@@ -187,7 +189,7 @@ main h2 {
   --swiper-theme-color: #27e9b6; 
 }
 .main2 .swiper-button-next, .main2 .swiper-button-prev {
-  --swiper-theme-color:#27e9b6; padding: 20px;
+  --swiper-theme-color:#27e9b6;
 };
 
 
@@ -214,14 +216,60 @@ main h2 {
 
 /* 반응형 */
 
-@media screen and (max-width:1300px) {
-  /* .main1 .swiper {height: 700px;} */
-  /* .main1 .swiper-slide {height: 700px; padding: 5px 20px;} */
+/* 1200px 미만 */
+@media screen and (max-width:1200px){
+  .main2 .swiper-slide .overlay p:nth-child(1) {font-size: 20px; }
 }
-@media screen and (max-width:1100px) {
-  /* .main1 .swiper { height: 500px;}
-  .main1 .swiper-slide {height: 500px;} */
+
+/* 900px 미만 */
+@media screen and (max-width:900px) {
+  header #title {flex-direction: column;}
+  header h1 {font-size: 60px;}
+  header p {margin-top: -20px; margin-left: 0; font-size: 50px;}
 }
-@media screen and (max-width:899px) {
+
+/* 800px 미만 */
+@media screen and (max-width:800px){
+  .main1 .swiper {width: 80%; height: 800px;  padding: 0 70px; box-sizing: border-box;}
+  .main1 .swiper-slide {height: 800px;}
+  .main1 .swiper-slide img {width: 100%; margin: 0 auto;}
+  .main1 .swiper-slide p {padding-left: 10px; padding-top: 30px; font-size: 24px; text-align: center;}
+  .main1 .swiper-slide span {padding-left: 10px; font-size: 20px; text-align: center;}
+
+  .main2 .swiper-slide .overlay p:nth-child(1) {font-size: 20px; }
+  .main2 .swiper-button-next, .main2 .swiper-button-prev {
+    position: absolute; top: 50%;
+  }
+  .main2 .swiper {height: 700px; padding: 0 70px;}
+ 
+}
+
+/* 700px 미만 */
+@media screen and (max-width:700px){
+  header h1 {font-size: 40px;}
+  header p {margin-top: -20px; margin-left: 0; font-size: 40px;}
+  .main1 .swiper {width: 90%; height: 780px; }
+  .main1 .swiper-slide {height: 780px;}
+  .main1 .swiper-slide img {width: 100%; margin: 0 auto;}
+  .main2 .swiper { box-sizing: border-box;}
+}
+
+/* 600px 미만 */
+@media screen and (max-width:600px){
+  .main1 .swiper {width: 90%; height: 700px; }
+  .main1 .swiper-slide {height: 700px;}
+}
+
+/* 500px 미만 */
+@media screen and (max-width:500px){
+  header {padding: 10px 20px;}
+  header #menu ul {display: flex; flex-direction: column; text-align: right;}
+  header h1 {font-size: 30px;}
+  header p {margin-top: -10px; margin-left: 0; font-size: 30px;}
+  .main1 .swiper {width: 100%; height: 650px; padding: 0 40px; }
+  .main1 .swiper-slide {height: 650px;}
+  .main1 .swiper-slide img {width: 100%; margin: 0 auto;}
+  .main1 .swiper-slide p {padding-top: 15px; font-size: 20px;}
+  .main1 .swiper-slide span {padding-left: 10px; font-size: 16px; text-align: center;}
 
 }
