@@ -18,15 +18,6 @@ const menuIcon = document.querySelector('.menuBox .threeIcon');
 const xIcon = document.querySelector('.menuBox .xIcon');
 const windowInnerWidth = window.innerWidth;
 
-<<<<<<< HEAD
-=======
-// if(windowInnerWidth > 700){
-//   menuIcon.style.display = 'none';
-// } else {
-//   menuIcon.style.display = 'block';
-// }
-
->>>>>>> 6c16a94efa28266fea93c437fb4fa017409d1cca
 menuIcon.addEventListener('click',()=>{
   nav_menu.style.display = 'block';
   menuIcon.style.display = 'none';

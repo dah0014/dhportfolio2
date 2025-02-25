@@ -326,7 +326,7 @@ footer {
 }
 .footer p {
   position: relative; 
-  color: #ffffffca;
+  color: #ffffff;
   font-family: "Karla", serif;
   font-size: 40px; font-weight: 200;
   letter-spacing: 10px; text-align: center;
@@ -468,10 +468,7 @@ text-align: center;
  nav ul ul {width: 100px;}
  nav ul li a {width: 100px; font-size: 16px; width: 100px;}
 
-<<<<<<< HEAD
  h2 {padding: 150px 0 20px;}
-=======
->>>>>>> 6c16a94efa28266fea93c437fb4fa017409d1cca
  .about .buttons {
   display: flex; justify-content: center;
 }
@@ -480,11 +477,7 @@ main .about {flex-direction: column; justify-content: center;}
 main .about1 {border-right: none;}
 main .about1 .name {text-align: center; padding-bottom: 20px;}
 main .about1 .name-after {padding: 20px; border-bottom: 1px dotted #fff;}
-<<<<<<< HEAD
 main .about2-row {display: flex; margin-top: 10px;}
-=======
-main .about2-row {display: flex; margin-top: 0px;}
->>>>>>> 6c16a94efa28266fea93c437fb4fa017409d1cca
 
 .d_container article {flex: 1 1 50%;}
 .works article>div:nth-child(1) {width: 80%; height: 280px;}
@@ -495,7 +488,6 @@ main .about2-row {display: flex; margin-top: 0px;}
 .skills .skillSet .ability1 {font-size: 15px; color: #27e9b5; margin: 0px;}
 }
 
-<<<<<<< HEAD
 /* 800px 미만 */
 @media screen and (max-width:800px){
   .works article>div:nth-child(1) {width: 600px; height: 280px;}
@@ -538,52 +530,13 @@ main .about2-row {display: flex; margin-top: 0px;}
  .works article>div:nth-child(1) {width: 390px; margin-left: 50px;}
  .works article>div:nth-child(2) {width: 350px; margin-left: 50px;}
  .works article div p {font-size: 16px;}
- .footer p {}
 }
 /* 400px 미만 */
 @media screen and (max-width:400px){
-=======
-/* 700px 미만 */
-@media screen and (max-width:700px){
-  nav ul.inner {display: none; width: 1000px; transform: translateX(-50%);}
-  .menuBox .threeIcon {display: block;}
-  .contact1 {display: none;}
-  main .about2 {padding-left: 0;}
-  .works article>div:nth-child(1) {width: 80%; height: 250px;}
-}
-
-/* 600px 미만 */
-@media screen and (max-width:600px){
-  nav ul.inner {width: 1000px; transform: translateX(-50%);}
-  header h1 { font-size: 4rem;}
-  header .h-name {font-size: 3rem; top: 300px; text-align: center;}
-  header .h-port {text-align: center; font-size: 20px;}
-  .works article>div:nth-child(1) {width: 80%; height: 230px;}
-  .works article>div:nth-child(2) {margin-left: 150px;}
-  /* .about .buttons {display: flex; flex-direction: column;} */
-
-
-}
-
-/* 500px 미만 */
-@media screen and (max-width:500px){
-  nav ul.inner {width: 800px; transform: translateX(-50%);}
-  header {padding: 20px}
-  header h1 { font-size: 2rem;}
-  nav ul ul {width: 80px;}
-  nav ul li a {width: 80px; font-size: 14px;}
- .about .buttons {display: flex; flex-direction: column;}
-
-}
-/* 400px 미만 */
-@media screen and (max-width:400px){
-  nav ul.inner {width: 400px; transform: translateX(-25%);}
->>>>>>> 6c16a94efa28266fea93c437fb4fa017409d1cca
   header .h-name {font-size: 2rem; top: 280px; text-align: center;}
   header .h-port {text-align: center; font-size: 16px;}
   header .h-sentence {font-size: 20px;}
 
-<<<<<<< HEAD
   .skills { padding: 0;}
   .skills img {width: 30px; height: 30px; }
   .skills .skillSet>span {margin-top: 5px;}
@@ -594,6 +547,4 @@ main .about2-row {display: flex; margin-top: 0px;}
   .works article {position: relative; left: -35px;}
   .works article>div:nth-child(1) {width: 300px; height: 160px; margin-left: 50px;}
   .works article>div:nth-child(2) {width: 250px; margin-left: 40px;}
-=======
->>>>>>> 6c16a94efa28266fea93c437fb4fa017409d1cca
 }
