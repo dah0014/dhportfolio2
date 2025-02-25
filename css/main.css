@@ -392,12 +392,6 @@ footer {
     font-size: 20px; font-weight: 400;
   }
   .about .btn_click i {font-size: 20px;}
-  .about button {
-    margin-top: 10px; margin-right: 30px;
-    border: none;
-    width: 180px; height: 60px; 
-    border-radius: 10px;
-  }
   .about button {width: 150px; height: 50px;}
   .about button .resume {font-size: 18px;}
   .about button a {
@@ -481,9 +475,27 @@ main .about2-row {display: flex; margin-top: 0px;}
 /* 600px 미만 */
 @media screen and (max-width:600px){
   ul.inner {width: 1000px; transform: translateX(-50%);}
-  header h1 {white-space: nowrap; font-size: 4rem;}
+  header h1 { font-size: 4rem;}
   header .h-name {font-size: 3rem; top: 300px; text-align: center;}
   header .h-port {text-align: center; font-size: 20px;}
   .works article>div:nth-child(1) {width: 80%; height: 230px;}
+  .about .buttons {display: flex; flex-direction: column;}
+
 }
 
+/* 500px 미만 */
+@media screen and (max-width:500px){
+  ul.inner {width: 800px; transform: translateX(-50%);}
+  header {padding: 20px}
+  header h1 { font-size: 2rem;}
+  nav ul ul {width: 80px;}
+  nav ul li a {width: 80px; font-size: 14px;}
+}
+/* 400px 미만 */
+@media screen and (max-width:400px){
+  ul.inner {width: 400px; transform: translateX(-25%);}
+  header .h-name {font-size: 2rem; top: 280px; text-align: center;}
+  header .h-port {text-align: center; font-size: 16px;}
+  header .h-sentence {font-size: 20px;}
+
+}
