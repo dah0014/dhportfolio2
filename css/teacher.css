@@ -9,13 +9,12 @@ body {
 * {box-sizing: border-box;}
 /* --------header---------- */
 header {
-  height: 150px; padding: 0 50px 150px;
+  height: 150px; padding: 10px ;
 }
 /* Home button */
 .HomeBtn {
   width: 100px; height: 40px; position: relative; 
   background-color: rgba(0,0,0,0.4); border-radius: 8px; 
-  margin: 20px 0 0;
 }
 .HomeBtn a {
   display: block; width:100px; height: 40px; line-height: 40px; font-size: 16px; color:#27e9b6; border-radius: 8px;
@@ -33,7 +32,7 @@ header #menu ul {
 header #menu ul li {padding-left: 50px;}
 header #menu ul li:hover {color:#27e9b6;}
 /* title */
-header #title {display: flex; padding: 30px 20px 0;  }
+header #title {display: flex; padding: 30px 30px 0;}
 header h1 {color: #fff; font-size: 70px;}
 header p {
   color:#27e9b6; font-size: 50px; font-weight: 200; font-style: italic;
