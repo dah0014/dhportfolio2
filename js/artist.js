@@ -13,17 +13,14 @@ var main1 = new Swiper(".main1 .mySwiper", {
     prevEl: ".main1 .swiper-button-prev",
   },
   breakpoints: {
-    300: {
-      slidesPerView: 1,
+    100: {
+      slidesPerView: 1, /* 300px이상이면 1개씩 보이게 */
     },
-    700 : {
-      slidesPerView: 1,
-    },  
     800: {
-      slidesPerView: 2,  //브라우저가 768보다 클 때
+      slidesPerView: 2, /* 800px이상이면 2개씩 보이게 */
     },
-    1024: {
-      slidesPerView: 3,  //브라우저가 1024보다 클 때
+    1200: {
+      slidesPerView: 3,  
     },
     1500: {
       slidesPerView: 4,
@@ -50,11 +47,15 @@ var main2 = new Swiper(".main2 .mySwiper", {
   breakpoints: {
     100: {
       slidesPerView: 1,
-      grid: {rows: 2}
+      grid: {rows: 1},
+    },
+    620:{
+      slidesPerView: 1,  
+      grid: {rows: 2},
     },
     700: {
       slidesPerView: 1,  
-      grid: {rows: 2}
+      grid: {rows: 2},
     },  
     800: {
       slidesPerView: 2,  
