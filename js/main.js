@@ -14,27 +14,24 @@ if(window.scrollY = 0){
 
 /* 햄버거 메뉴 */
 const nav_menu = document.querySelector('.menuBox-sub');
-const menuIcon = document.querySelector('.menuBox .threeIcon');
+const threeIcon = document.querySelector('.menuBox .threeIcon');
 const xIcon = document.querySelector('.menuBox .xIcon');
-const windowInnerWidth = window.innerWidth;
 
-// if(windowInnerWidth > 700){
-//   menuIcon.style.display = 'none';
-// } else {
-//   menuIcon.style.display = 'block';
-// }
-
-menuIcon.addEventListener('click',()=>{
-  nav_menu.style.display = 'block';
-  menuIcon.style.display = 'none';
-  xIcon.style.display = 'block';
-});
-xIcon.addEventListener('click',()=>{
-  xIcon.style.display = 'none';
-  nav_menu.style.display = 'none';
-  menuIcon.style.display = 'block';
+$(document).ready(function(){
+  $(threeIcon).click(function(){
+    $(nav_menu).toggle("slow");
+    $(xIcon).toggle("slow");
+    $(threeIcon).toggle("none");
+  })
 });
 
+$(document).ready(function(){
+  $(xIcon).click(function(){
+    $(nav_menu).toggle("none");
+    $(xIcon).toggle("none");
+    $(threeIcon).toggle("block");
+  })
+});
 
 /* openBtn */
 let myWindow
