@@ -13,7 +13,7 @@ var main1 = new Swiper(".main1 .mySwiper", {
     prevEl: ".main1 .swiper-button-prev",
   },
   breakpoints: {
-    300: {
+    100: {
       slidesPerView: 1, /* 300px이상이면 1개씩 보이게 */
     },
     800: {

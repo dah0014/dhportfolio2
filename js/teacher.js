@@ -51,7 +51,7 @@ var main2 = new Swiper("#main2 .mySwiper", {
     prevEl: "#main2 .swiper-button-prev",
   },
   breakpoints: {
-    300: {
+    100: {
       slidesPerView: 1,
     },
     700 : {
@@ -77,7 +77,7 @@ var main3 = new Swiper("#main3 .mySwiper", {
     prevEl: "#main3 .swiper-button-prev",
   },
   breakpoints: {
-    300: {
+    100: {
       slidesPerView: 1,
     }, 
     1200 : {
