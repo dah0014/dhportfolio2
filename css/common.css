@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* -----font----- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* -------common------- */
+body {overflow-x: hidden; font-family: "Noto Sans KR", serif; color: #333;}
+.inner {width: 1600px; margin: 0 auto; overflow: hidden; }
+
+/* main 소제목 */
+h2 { 
+  width: 100%; padding: 150px 0 100px;
+  position: relative; text-align: center;
+  font-size: 5rem; color: aliceblue; 
+  font-family: "Karla", serif;
+  font-style: italic; letter-spacing: 7px; font-weight: 200;
+}
+
+/* fade in, fade out */
+body {animation : fadein 2000ms ease-out;}
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ------top button----- */
+.fix-top {
+  position: fixed; z-index: 9997; bottom: 0; right: 0; padding: 30px;
+}
+.btn-top {
+  width: 50px; height: 50px; 
+  background: #000; opacity: 0.6; font-size: 14px; 
+  border-radius: 50%; border: 0;
+  color: #fff; text-align: center; line-height: 12px;
+  font-family: "Karla", serif;
+  cursor: pointer;
+}

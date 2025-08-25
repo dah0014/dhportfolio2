@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+/* --------font-------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  background-color: #222831; color: #fff;
+}
+* {box-sizing: border-box;}
+/* --------header---------- */
+header {
+  height: 150px; padding: 10px ;
+}
+/* Home button */
+.HomeBtn {
+  width: 100px; height: 40px; position: relative; 
+  background-color: rgba(0,0,0,0.4); border-radius: 8px; 
+}
+.HomeBtn a {
+  display: block; width:100px; height: 40px; line-height: 40px; font-size: 16px; color:#27e9b6; border-radius: 8px;
+  letter-spacing: 1px; font-family: "Lato", serif; font-weight: 300;
+}
+.HomeBtn a:hover {background-color: rgba(255,255,255,0.5);}
+
+/* nav */
+header #menu ul {
+  position: fixed; top: 0; z-index: 9999; padding-top: 10px; right: 30px;
+  display: flex; justify-content: right;
+  color: #fff; 
+  
+}
+header #menu ul li {padding-left: 50px;}
+header #menu ul li:hover {color:#27e9b6;}
+/* title */
+header #title {display: flex; padding: 30px 30px 0;}
+header h1 {color: #fff; font-size: 70px;}
+header p {
+  color:#27e9b6; font-size: 50px; font-weight: 200; font-style: italic;
+  letter-spacing: 10px; padding-top: 20px; padding-left: 40px;
+  font-family: "Lato", serif;
+}
+
+/* ----------main-------------- */
+main h2 {
+  margin-top: 100px;
+  padding : 70px 70px 40px;
+  position: relative; text-align: center;
+  font-size: 3rem; color: aliceblue; 
+  font-family: "Karla", "Noto Sans KR";
+  font-style: italic; letter-spacing: 7px; font-weight: 200;
+}
+
+/* -----------Lemon Art Academy----------- */
+#lemon {display: flex; padding: 0 70px; justify-content: center;}
+#lemon img {width: 600px; margin: 50px; border-radius: 20px; display: flex; justify-content: center;}
+
+/* 제목-설명 */
+#lemon .lemon-1 {display: flex; flex-direction: column; margin: 100px 60px 0;}
+#lemon p:nth-child(1) {color:#27e9b6; font-size: 40px; padding-bottom: 20px;}
+#lemon p:nth-child(2) {font-size: 28px; font-weight: 120;}
+
+
+/* ---------------class photo----------- */
+#classPhoto {padding-bottom: 0; margin-top: 100px;}
+#main1 {
+  position: relative;
+  height: 100%;
+  font-size: 14px;
+  color: #000;
+}
+
+#main1 .swiper {
+  width: 100%;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; margin-bottom: 100px;
+}
+
+#main1 .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+  border-radius: 20px;
+  position: relative;
+}
+#main1 .s1 {
+  background-image: url('../img/art1.jpg');
+  background-position: center top 35%;
+  background-size: cover;
+}
+#main1 .s2 {
+  background-image: url('../img/art2.jpg');
+  background-position: center top 50%;
+  background-size: cover;
+}
+#main1 .s3 {
+  background-image: url('../img/art3.jpg');
+  background-position: center top 50%;
+  background-size: cover;
+}
+#main1 .s4 {
+  background-image: url('../img/art4.jpg');
+  background-position: center top 20%;
+  background-size: cover;
+}
+#main1 .s5 {
+  background-image: url('../img/art5.jpg');
+  background-position: left 0% top 60%;
+  background-size: cover;
+}
+#main1 .s6 {
+  background-image: url('../img/art6.jpg');
+  background-position: left 0% top 60%;
+  background-size: cover;
+}
+#main1 .s7 {
+  background-image: url('../img/art7.jpg');
+  background-position: left 0% top 50%;
+  background-size: cover;
+}
+#main1 .s8 {
+  background-image: url('../img/art8.jpg');
+  background-position: left 0% top 40%;
+  background-size: cover;
+}
+#main1 .s9 {
+  background-image: url('../img/art9.jpg');
+  background-position: left 0% top 40%;
+  background-size: cover;
+}
+#main1 .s10 {
+  background-image: url('../img/art10.jpg');
+  background-position: left 0% top 40%;
+  background-size: cover;
+}
+#main1 .s11 {
+  background-image: url('../img/art11.jpg');
+  background-position: left 0% top 40%;
+  background-size: cover;
+}
+#main1 .s12 {
+  background-image: url('../img/art12.jpg');
+  background-position: left 0% top 40%;
+  background-size: cover;
+}
+
+/* number */
+#main1 .swiper-slide h4 {font-size: 50px; padding: 10px; font-family: "Karla", serif; color:#3D8D7A;}
+
+/* overlay */
+#main1 .swiper-slide .overlay {
+  position: absolute; padding: 40px;
+  top: 0;
+  left: 0;
+  width: inherit; height: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: left; 
+  background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: #fff;
+  border-radius: 20px;
+  display: flex; flex-direction: column;
+  font-weight: 200;
+}
+#main1 .swiper-slide:hover .overlay {
+  opacity: 1;
+}
+#main1 .swiper-slide .overlay p:nth-child(1) {font-size: 30px;}
+#main1 .swiper-slide .overlay p:nth-child(2) {font-size: 20px;}
+
+/* arrow, page */
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  --swiper-theme-color: #27e9b6; 
+}
+#main1 .swiper-button-next, .main2 .swiper-button-prev {
+  --swiper-theme-color:#27e9b6; padding: 20px;
+};
+
+/* -------------------curriculum------------------- */
+#main2 .swiper {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
+#main2 .swiper-slide {
+  height: 700px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.7);
+  display: flex; flex-direction: column;
+  color: #332;
+  position: relative;
+}
+#main2 .swiper-slide h4 {
+  position: relative; font-size: 50px; padding: 10px; font-family: "Karla", serif; color:#3D8D7A;
+}
+
+#main2 .swiper-slide img {
+  width: 100%; height: 550px;
+  object-fit: contain;
+  margin: 10px 0 20px;
+}
+
+#main2 .swiper-slide p {position: absolute; left: 50%; transform: translateX(-50%); font-size: 24px;}
+
+#main2 .swiper-button-next, .swiper-button-prev {
+  --swiper-theme-color:#27e9b6; padding: 20px;
+}
+#main2 .swiper-pagination {font-size: 18px; color:#332;}
+
+
+/* --------------레몬 알림------------------ */
+#notification {font-family: "Noto Sans KR", serif; font-size: 40px; font-style: normal; font-weight: 500; padding-bottom: 20px;}
+#main3 .noti-de {font-size: 25px; padding: 20px 70px 30px; font-weight: 100; text-align: center;}
+#main3 .swiper {
+  width: 100%;
+  height: 700px;
+  margin: 20px auto;
+}
+#main3 .swiper-slide {
+  height: 700px;
+  padding: 10px 0;
+  border-radius: 20px;
+  background-color: rgba(255,255,255,0.7);
+  display: flex; flex-direction: column;
+  color: #332;
+  position: relative;
+}
+#main3 .swiper-slide h4 {
+  position: relative; font-size: 50px; padding: 0 10px; font-family: "Karla", serif; color:#3D8D7A;
+}
+
+#main3 .swiper-slide img {
+  display: block;
+  width: 100%; height: 550px;
+  object-fit: contain;
+  margin: 10px 0 20px;
+}
+
+#main3 .swiper-slide p {position: absolute; left: 50%; transform: translateX(-50%); font-size: 24px;}
+
+#main3 .swiper-button-next, .swiper-button-prev {
+  --swiper-theme-color:#27e9b6; padding: 20px;
+}
+#main3 .swiper-pagination {font-size: 18px; color:#332;}
+
+
+/* ---------------footer------------------ */
+.footer {
+  width: 100%; height: 350px; margin-top: 100px;
+}
+.footer p {
+  text-align: center; padding-top: 100px;
+  font-size: 50px; font-style: italic; font-family: "Lato", serif; font-weight: 200;
+}
+.footer button {
+  width: 150px; height: 50px; position: relative; left: 50%; transform: translate(-50%); margin: 40px 0 60px; border-radius: 8px;
+  background-color: rgba(0,0,0,0.4); 
+}
+.footer button a {
+  display: block; width: 150px; height: 50px; line-height: 50px; font-size: 20px; color:#27e9b6; font-family: "Lato", serif; border-radius: 8px;
+  font-weight: 300;
+}
+.footer button a:hover {background-color: rgba(255,255,255,0.5);}
+
+/* 반응형 */
+
+/* 1500px 미만 */
+@media screen and (max-width:1500px){
+  #lemon img {width: 500px;}
+  #lemon .lemon-1 {margin: 100px 20px 0;}
+  #lemon p:nth-child(1) {color:#27e9b6; font-size: 35px; padding-bottom: 20px;}
+  #lemon p:nth-child(2) {width: 500px; font-size: 24px; font-weight: 100;}
+
+}
+
+/* 1200px 미만 */
+@media screen and (max-width:1200px){
+  header #title {display: flex; flex-direction: column;}
+  header h1 {font-size: 60px;}
+  header p {font-size: 50px; padding: 0; position: relative; top: -20px;}
+  #lemon {flex-direction: column;}
+  #lemon img {width: 450px; margin: 30px auto 0;}
+  #lemon .lemon-1 {width: 450px; margin: 30px auto 0 ;}
+
+  #main2 .swiper {padding: 0 150px;}
+  #main2 .swiper-slide {height: 750px;}
+  #main2 .swiper-slide img {height: 600px; margin: 0 0 20px;}
+
+  #main3 .noti-de {font-size: 20px; padding: 10px 70px 30px; font-weight: 100;}
+  #main3 .swiper {height: 700px; padding: 0 150px;}
+  #main3 .swiper-slide {height: 700px;}
+  #main3 .swiper-slide img {margin: 0; height: 550px; }
+}
+
+/* 900px 미만 */
+@media screen and (max-width:900px){
+  #main2 .swiper {padding: 0 70px;}
+  #main2 .swiper-slide img {height: 600px;}
+
+  #main3 .noti-de {font-size: 18px; padding: 0 70px 30px; font-weight: 100;}
+  #main3 .swiper {height: 700px; padding: 0 70px;}
+}
+
+/* 710px 미만 */
+@media screen and (max-width:710px){
+  main {margin-top: 100px;}
+  main h2 {font-size: 2.2rem; padding : 0 0 20px;}
+  header h1 {font-size: 40px;}
+  header p {font-size: 35px; position: relative; top: -10px;}
+  #main2 .swiper {padding: 0 50px;}
+  #main3 .swiper {height: 700px; padding: 0 50px;}
+
+  .footer p {font-size: 40px;}
+}
+
+/* 600px 미만 */
+@media screen and (max-width:600px){
+  header p {font-size: 35px; position: relative; top: -10px; letter-spacing: 2px;}
+  nav#menu ul{display: flex; flex-direction: column; text-align: right;}
+  #lemon {padding: 0 30px;}
+  #lemon .lemon-1 {margin: 50px 40px 0;}
+  #lemon p:nth-child(1) {font-size: 32px; padding-bottom: 20px;}
+  #lemon p:nth-child(2) {width: 450px; font-size: 22px; font-weight: 100;}
+  #main2 .swiper {padding: 0;}
+
+  #notification {font-size: 35px;}
+  #main3 .noti-de {font-size: 18px; padding: 0 10px 30px; font-weight: 100;}
+  #main3 .swiper {height: 700px; padding: 0;}
+}
+
+/* 500px 미만 */
+@media screen and (max-width:500px){
+  header p {font-size: 27px;}
+  header #menu ul {right: 10px;}
+  #lemon {margin: 0;}
+  #lemon img {width: 350px; }
+
+  #lemon .lemon-1 {width: 350px; margin: 30px 30px 0;} /* nth-child(2)와 w연결 */
+  #lemon p:nth-child(1) {font-size: 28px;}
+  #lemon p:nth-child(2) {width: 350px; font-size: 16px;}
+
+  #main3 .noti-de {font-size: 15px;}
+  #main3 .swiper {height: 650px; padding: 0;} /* swiper-slide와 height연결 */
+  #main3 .swiper-slide {height: 650px;}
+
+  .footer p {font-size: 30px;}
+}
+
+/* 400px 미만 */
+@media screen and (max-width:400px){
+  header #title {padding: 20px 10px;}
+  header h1 {font-size: 30px;}
+  header p {font-size: 25px;}
+  #lemon img {width: 300px; }
+  #lemon .lemon-1 {width: 300px; margin: 30px 10px 0;} /* nth-child(2)와 w연결 */
+  #lemon p:nth-child(2) {width: 300px; font-size: 16px;}
+
+  #main2 .swiper-slide {height: 650px;}
+  #main2 .swiper-slide img {height: 550px;}
+  #main2 .swiper-slide h4 {padding: 0;}
+
+  #main3 .swiper {height: 580px; padding: 0;} /* swiper-slide와 height연결 */
+  #main3 .swiper-slide {height: 580px;}
+  #main3 .swiper-slide img {height: 500px;}
+}

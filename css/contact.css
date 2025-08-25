@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+  background-color: #222831; color: #fff;
+}
+* {box-sizing: border-box;}
+
+/* Home button */
+.HomeBtn {
+  width: 100px; height: 40px; position: absolute; margin: 30px;
+  background-color: rgba(0,0,0,0.4); border-radius: 8px; 
+}
+.HomeBtn a {
+  display: block; width:100px; height: 40px; line-height: 40px; font-size: 16px; color:#27e9b6; border-radius: 8px;
+  letter-spacing: 1px; font-family: "Lato", serif; font-weight: 300;
+}
+.HomeBtn a:hover {background-color: rgba(255,255,255,0.5);}
+
+
+section .box {
+  display: flex;
+  width: 700px; height: 400px; padding: 40px; 
+  position: relative; left: 50%; top: 50%; transform: translate(-50%, 60%);
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50px;
+  box-shadow: 10px 10px rgb(136, 134, 134);
+}
+section img{
+  position: relative; top: 50%; transform: translate(5%,-50%);
+  display: flex; justify-content: center;
+  width: 300px; height: 300px; 
+  object-fit: cover; 
+  object-position: top 20% left 0;
+  border-radius: 50%; 
+  box-shadow: 8px 8px 8px rgba(43, 43, 41, 0.522);
+}
+
+section .contactBox {margin-left: 70px; position: relative; top: 10%;}
+section .name {font-size: 30px; text-align: left; color: #332; line-height: 1.2;}
+section .contact {
+  padding: 0 20px 20px 0; margin-top: 50px; font-size: 17px; 
+  color: #332;
+}
+section .contact i {color: #1ebc92; padding: 5px 20px 5px 0;}
+
+/* 반응형 */
+@media screen and (max-width:899px) {
+  section .box {
+    display: flex; flex-direction: column; justify-content: center;
+    width: 500px; height: 600px; padding: 20px;
+    position: relative; left: 50%; top: 10%; transform: translate(-50%, 20%);
+  }
+  section img {
+    width: 250px; height: 250px; 
+    position: relative; top: 10%; transform: translate(40%, -25%);
+  }
+  section .contactBox {margin-left: 0; top: 5%;}
+  section .name {text-align: center;}
+  section .contact {margin-left: 20%; padding: 0 20px 20px 0;}
+}
+
+/* 700px 미만 */
+@media screen and (max-width:700px){
+  section .box {background: none; box-shadow: none;}
+  section .name {color: #fff;}
+  section .contact {color: #fff;}
+}
+
+/* 500px 미만 */
+@media screen and (max-width:500px){
+  section img {
+    width: 250px; height: 250px; 
+    position: relative; top: 10%; transform: translate(50%, -25%);
+  }
+  section .contact {margin-left: 25%; padding: 0 20px 20px 0;}
+}
